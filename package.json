@@ -1,0 +1,17 @@
+{
+  "name": "module-federation",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"wsrun --parallel start\""
+  },
+  "workspaces": [
+    "modules/*"
+  ],
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^6.5.1",
+    "wsrun": "^5.2.4"
+  }
+}
